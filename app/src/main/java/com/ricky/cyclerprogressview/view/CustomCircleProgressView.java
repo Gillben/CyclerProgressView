@@ -115,6 +115,7 @@ public class CustomCircleProgressView extends View {
         //绘制进度值
         String text = mCurrentLocation + "%";
         float textWith = mPaintText.measureText(text,0,text.length());   //获取text 所占用的宽度
+        //获取基准线
         float dx = getWidth()/2 - textWith/2;
         Paint.FontMetricsInt fonMetricsInt = mPaintText.getFontMetricsInt();
         float dy = (fonMetricsInt.bottom - fonMetricsInt.top)/2 - fonMetricsInt.bottom;
